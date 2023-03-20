@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        ACTIVITAT    
+        </title>
+    </head>
+    <body>
+<script>
+    //Función producto
+    function producto(a,b){
+    return (a*b) 
+    }
+    //////////////////////////
+
+    //Función saludo
+    function saludo(nom){
+    return ("Hola "+nom) 
+    } 
+    //////////////////////////
+
+    //Función área de círculo
+    function area_circulo(rad){
+    return ((rad*rad) * Math.PI) 
+    } 
+    //////////////////////////
+
+    //Función máximo
+    function max(na,nb){
+    if(na > nb){return na}else{return nb} 
+    }
+    //////////////////////////
+
+    //Función división
+    function division(a,b){
+    if(b == 0){return "ERR"}
+    return (a/b) 
+    }   
+    //////////////////////////
+
+    //Función par o impar
+    function par(num){
+    if(num % 2 == 0){return "PAR"}else{ return "IMPAR"} 
+    } 
+    //////////////////////////
+
+    //Función de clasificación por edad
+    function clasificacion_edad(edad){
+    switch(true){
+    case edad<13: 
+    return "niño";
+    break;
+    case 13<= edad && edad<=18:
+    return "adolescente";
+    break;
+    case 19<= edad && edad<=64:
+    return "adulto";
+    break;
+    case 65<=edad: 
+    return "mayor";  
+    break;    
+    }
+    }
+    //////////////////////////
+
+    //Función de clasificación por calificación
+    function clasificacion_calificación(numclas){
+    switch(true){
+    case numclas<60: 
+    return "E";
+    break;
+    case 60<= numclas && numclas<=69:
+    return "D";
+    break;
+    case 70<= numclas && numclas<=79:
+    return "C";
+    break;
+    case 80<= numclas && numclas<=89:
+    return "B";
+    break;
+    case 90<=numclas: 
+    return "A";  
+    break;    
+    }
+    }
+    //////////////////////////
+
+    //Función de descuento
+    function descuento(precio,comprado)
+    {
+     switch(true)
+     {
+    case comprado == 1:
+    return (precio -(precio *0))
+    break;
+    case 2<= comprado && comprado <=4:
+    return (precio -(precio *0.1))
+    break;
+    case 5<= comprado && comprado <=10:
+    return (precio -(precio *0.2))
+    break;
+    case 10 <= comprado:
+    return (precio -(precio *0.3))
+    break;   
+     }
+    }
+    //////////////////////////
+
+    //Función de divisibilidad
+    function divisibilidad(a,b){
+    if(b==0){return "error"}else{if(a % b == 0){return "divisible"}else{return "no divisible"}}
+    }
+    //////////////////////////
+    
+</script>
+    </body>
+</html>
